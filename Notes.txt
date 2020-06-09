@@ -100,7 +100,7 @@ else:
 
 _______**
 
-COUNT & INDEX
+COUNT & INDEX Methods
 
 
 COUNT
@@ -138,4 +138,47 @@ _______**
 
 DICTIONARIES
 
+Similarities to lists, contain comma-separated values, indexed by their key and
+wrapped in curly-braces 
 
+    dictionary = {'name':'Ryan', 'job':'manager', 'age':38}
+
+    Keys must be immutable type, Values can be any type (of data)
+
+    Accessing data inside a dictionary
+
+        given a sample dictionary above, to access the first value we would use
+
+            dictionary['name']
+
+                Similar acces methods to get value out of a List, however we use
+                the key's value to get the assocaited value
+
+            .keys() & .values Methods
+
+                returns list of keys / values (respectively) within a dictionary and 
+                returns as a list
+
+                    dictionary.keys() - returns list of keys
+                    dictionary.values() - returns list of keys' values
+
+    Updating and Mutating DICTIONARIES
+
+        Changing a value for a key requires accessing the existing value's key and
+        setting it to the new desired value by assignment, example below;
+
+            dictionary['name'] = 'Archie'
+                // this will change the value store with the 'name' key from 'Ryan'
+                    to 'Archie', the old value is overwritten
+
+        Adding a new key:value pair uses same syntax
+            dictionary['stages'] = 2
+                // this will create a new key:value pair and assign the passed value
+                to the (created) key, python will add it at the end of the dictionary
+
+        Removing a key:value pair from dictionary with the del() method
+           del(dictionary['stages'])
+                // this will delete - remove the associated key:value pair from the 
+                dictionary
+
+                
