@@ -68,3 +68,74 @@ by 1 each time
 
 
 _______**
+
+
+LEN, MIN, MAX
+
+All built-in functions that will work on all sequences which contain all
+elements of the same datatype )all numbers, all strings, etc)
+
+len() - returns length of sequence passed as argument
+
+min() - returns minimum value of sequence passed as argument
+
+max() - returns largest value in sequence passed as argument
+
+
+_______**
+
+MEMBERSHIP TESTING
+
+Whether or not an item or sequence is IN another sequence
+
+docs = "any random string"
+
+if 'random' in* docs:
+    # do something
+else:
+    # do something else
+
+* Note - also works as 'not in' - test condition will eval to true / false
+ depending on what you're looking for as well
+
+_______**
+
+COUNT & INDEX
+
+
+COUNT
+    docs = "any random string"
+
+    print(docs.count('target value'))
+        returns int value of number of times the target 
+        string or value is found in the target sequence(s)
+
+    docs = "any random string"
+
+INDEX
+    print(docs.index('target value'))
+        returns int value of the first index position of the 
+        first appearance of the target value's appearance in the
+        sequence passed to the .index() method.
+        Note - only returns index value of FIRST instance of target value
+
+
+_______**
+
+
+CONCANTENATION
+
+combining two objects together, for mutable sequences this will modify
+one sequence, for immutable sequences this will need to create a NEW sequence
+and is accomplished with the plus sign (+)
+
+MULTIPLICATION
+
+sequence name plus multiplication sign (*) and the (int) value to multiply it
+
+
+_______**
+
+DICTIONARIES
+
+
