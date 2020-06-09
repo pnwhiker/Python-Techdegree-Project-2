@@ -1,0 +1,70 @@
+
+# first, last = input('please enter your name: ').split(' ')
+
+# print(first)
+# print(last)
+
+
+# meats = ['beef', 'chicken', 'steak', 'lamb', 'pork']
+
+# for index, meat in enumerate(meats, 1):
+#     print(f'{index}. {meat}')
+    
+
+""" Enumerates the loops in the iterable
+    2nd value passed to iterable inside the enmuerate method is the starting number
+    for the lines that are retuned, in this case the first item numeral will be 1
+"""
+
+_______**
+RANGES
+
+Range method will iterate from the start val to the stop val 
+and step-thru by the step val.
+Note - if no start val is passed or less than 3 args are passed, 
+Python assumes starting point is 0, defaul step value is 1
+
+
+range(start, stop, step)
+
+for i in range(0,10,1)
+    print(i)
+
+Ranges are EXclusive of stop values, so the loop above will not run / output of 10,
+only values 0 thru 9 will be printed.
+
+* Note - as Python will defaul start and step args to 0 an 1, this loop can
+  be expressed as 'for i in range(10): etc'
+
+_______**
+
+
+_______**
+SLICES
+
+Portion of a sequence, similar syntax as range()
+
+given a sequence, seq, with a list of values
+
+seq = [1,2,3,4,5,6,7,8,9]
+
+seq[ start : stop : step ]
+
+seq[1:4:1] will be interetpreted as 'take a slice of sequence 'seq',
+starting with the first value, ending with the 4th value, incrementing 
+by 1 each time
+
+* Notes
+
+    - slice method assumes if no values are given for start / stop / step
+      points, the default vaules are the first val, last val, and 1
+
+    - slice w/ step value of -1 will reverse a list
+
+    - slice doesn't change the original sequence, it creates a new one
+
+    - 
+
+
+
+_______**
