@@ -138,4 +138,14 @@ _______**
 
 DICTIONARIES
 
+Intro / Info - set of key:value pairs, each hving a label (the key) which is the index
+value of the associated value
+
+    Syntax - wrapped in curly braces / separated by commas {key:value, key:value, key:value}
+    Order of the key / value pairs does not matter
+
+Accessing data inside the dictionary;
+    
+
+
 
